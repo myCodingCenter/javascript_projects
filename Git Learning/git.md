@@ -9,20 +9,20 @@ github is a service
 
 # git configurations
 to configure git settings
- ```for name
+ ```git
 git config --global user.name "Gemmy"
  ```
     
- ```for email
+ ```git
 git config --global user.email "cccontactme1@gmail.com"
 
  ```
 # Git Add
  to add files in staging area
- ```git add
+ ```git
  git add <file1> <file 2 >
  ```
- ```git add all
+ ```git
  git add .
  ```
 
@@ -30,27 +30,27 @@ git config --global user.email "cccontactme1@gmail.com"
 one time per project
 it create .git => a hidden folder to keep history of all files & subfolders
 
-``` to see .git
+```git
 ls -l -a or
 ls -la
 ```
-``` git init
+```git
 git init
 ````
-``` git init @ main
+```git
 git init -b main
 ```
 # Git Add
  to add files in staging area
- ```git add
+ ```git
  git add <file1> <file 2 >
  ```
- ```git add all
+ ```git
  git add .
  ```
  # git commit
  to commit files, after this it is ready to pus 
- ```git commit
+ ```git
  git commit -m "your message"
 ```
 # working flow 
@@ -58,10 +58,10 @@ working directory --> git add --> staging area --> git commit ---> Repo --> git 
 
 # Git log
  to see commits
- ```git log
+ ```git
  git log
  ```
- ```git log in oneline 
+ ```git
  git log --oneline
  ```
 # Atomic Commits 
