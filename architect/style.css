@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    font-size: 2rem;
+    color: gray;
+    padding: 1.5rem 0px;
+}
+.logo{
+    padding-left: 2rem;
+}
+.logo span{
+    color: black;
+    font-weight: bold;
+}
+nav ul{
+    width: calc(100vw - 50%);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0rem 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color:gray;
+}
+header{
+    max-width: 100%;
+    position: relative;
+}
+header img{
+    width: 100%;
+}
+.h-logo{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+}
+.h-logo span{
+    background-color:black;
+    opacity: 0.8;
+    padding: 0 .8rem;
+}
+.projects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+.projects img,.team img,.contact img{
+    width: 100%;
+}
+.project{
+    position: relative;
+}
+.project-name{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+}
+h2{
+    margin: 3rem 0;
+    border-bottom: 2px solid gray;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.teams{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.teams h3{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.teams .team .position{
+    margin: 1rem 0;
+    color: gray;
+    font-size: 1.2rem;
+}
+.teams .team .team-contact{
+    color:black;
+    background-color: lightgray;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .8rem 0px;
+    margin: 1rem 0;
+}
+.contact div input{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0px;
+    box-sizing: border-box;
+}
+.contact div .send-msg{
+    width: inherit;
+    color: wheat;
+    background-color: black;
+    padding: 1rem 2rem;
+    border: none;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+}
