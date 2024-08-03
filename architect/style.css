@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 nav{
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     font-size: 2rem;
     color: gray;
     padding: 1.5rem 0px;
@@ -17,36 +18,32 @@ nav{
     font-weight: bold;
 }
 nav ul{
-    width: calc(100vw - 50%);
     list-style: none;
     display: flex;
-    justify-content: center;
-}
-nav ul li{
-    margin: 0rem 2rem;
+    justify-content: space-around;
 }
 nav ul li a{
     text-decoration: none;
     color:gray;
 }
 header{
+    box-sizing: border-box;
     max-width: 100%;
     position: relative;
 }
-header img{
-    width: 100%;
-}
+
 .h-logo{
     position: absolute;
-    top: 50%;
-    text-align: center;
-    width: 100%;
-    font-size: 4rem;
+    top: 40%;
+    left:40%;
     color: white;
+    font-size: 4rem;
 }
 .h-logo span{
-    background-color:black;
-    opacity: 0.8;
+    background-color: black;
+    /* font-size: 2rem; */
+    opacity: 0.5;
+    margin-right: 1rem;
     padding: 0 .8rem;
 }
 .projects{
@@ -85,6 +82,7 @@ h2{
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
 }
+
 .teams h3{
     font-size: 1.4rem;
     margin-top: 1rem;
@@ -122,4 +120,24 @@ footer{
     color: white;
     padding: 2rem;
     margin-top: 1rem;
+}
+
+@media (width<1200px) {
+    .teams,.projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+    nav ul{
+        display:none;
+    }
+    nav{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0;
+    }
+    header .h-logo{
+        font-size: 2rem;
+    }
+    .architect{
+        display: none;
+    }
 }
